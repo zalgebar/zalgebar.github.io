@@ -57,7 +57,8 @@ div.list-section {
 
 div.list-item {
   display: inline-block;
-  margin: 20px 0px;
+  padding: 20px 0px;
+  margin: 5px 0px;
   width: 150px;
 }
 
