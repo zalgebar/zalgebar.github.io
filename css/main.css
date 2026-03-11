@@ -69,3 +69,16 @@ div.footer {
   text-align: center;
   font-size: 8pt;
 }
+
+@media screen and (min-width: 992px) {
+  div.list-section {
+    vertical-align: middle;
+    display: inline-block;
+    width: 625px;
+  }
+  div.list-item {
+    display: inline-block;
+    margin: 20px 0px;
+    width: 150px;
+  }
+}
