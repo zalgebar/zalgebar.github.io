@@ -60,10 +60,15 @@ div.list-item {
   padding: 20px 0px;
   margin: 5px 0px;
   width: 150px;
+  border: 1px #40404A solid;
+  border-radius: 10px;
+  transition: border 0.4s;
 }
 
 div.list-item:hover {
-  text-decoration: underline;
+  border: 1px gray solid;
+  border-radius: 10px;
+  transition: border 0.4s;
 }
 
 div.footer {
