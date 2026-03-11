@@ -25,8 +25,8 @@ a:visited {
 
 div.logo-link {
   display: inline-block;
-  width: 500px;
   vertical-align: middle;
+  width: 250px;
   border: 1px #40404A solid;
   border-radius: 10px;
   transition: border-color 0.4s;
@@ -42,10 +42,12 @@ img.logo, img.logo-external {
   width: 75px;
   height: 75px;
   vertical-align: middle;
+  display: inline-block;
 }
 
 div.logo-text {
   vertical-align: middle;
+  display: inline-block;
 }
 
 div.footer {
