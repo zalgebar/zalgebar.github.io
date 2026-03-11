@@ -29,6 +29,7 @@ a.visited {
 }
 
 div.logo-link {
+  display: inline-block;
 }
 
 img.logo, img.logo-external {
