@@ -1,8 +1,29 @@
 body {
   background-color: #40404A;
   color: white;
+  font-family: Arial, sans-serif;
 }
+
 div.main {
   align: center;
   vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.link {
+}
+
+a.hover {
+}
+
+a.visited {
+}
+
+div.logo-link {
+  border: 1px white solid;
+  border-radius: 5px;
 }
