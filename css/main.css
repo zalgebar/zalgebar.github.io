@@ -35,3 +35,8 @@ img.logo, img.logo-external {
   max-width: 75px;
   max-height: 75px;
 }
+
+div.footer {
+  text-align: middle;
+  font-size: 1pt;
+}
