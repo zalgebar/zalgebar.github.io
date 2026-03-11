@@ -32,6 +32,13 @@ div.logo-link {
   display: inline-block;
   vertical-align: middle;
   width: 500px;
+  border: 1px white #40404A;
+}
+
+div.logo-link:hover {
+  border: 1px white solid;
+  border-radius: 5px;
+  transition: border-color 0.4s;
 }
 
 img.logo, img.logo-external {
