@@ -29,6 +29,7 @@ div.logo-link {
   vertical-align: middle;
   border: 1px #40404A solid;
   border-radius: 10px;
+  transition: border-color 0.4s;
 }
 
 div.logo-link:hover {
