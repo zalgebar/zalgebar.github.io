@@ -50,6 +50,11 @@ div.logo-text {
   display: inline-block;
 }
 
+div.list-section {
+  vertical-align: middle;
+  display: inline-block;
+}
+
 div.footer {
   color: black;
   margin: 4em;
