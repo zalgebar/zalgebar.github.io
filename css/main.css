@@ -12,8 +12,6 @@ div.main {
 a {
   text-decoration: none;
   color: white;
-  border: none;
-  transition: 0.4s;
 }
 
 a:link {
@@ -27,10 +25,10 @@ a:visited {
 
 div.logo-link {
   display: inline-block;
-  vertical-align: middle;
-  border: 1px white #40404A;
-  border-radius: 10px;
   width: 500px;
+  vertical-align: middle;
+  border: 1px #40404A solid;
+  border-radius: 10px;
 }
 
 div.logo-link:hover {
