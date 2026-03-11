@@ -1,8 +1,8 @@
 {
-  "names": {
-    "zalgebar": "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941"
+  "names" : {
+    "zalgebar" : "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941"
   }
-  "relays": {
+  "relays" : {
     "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941": [
       "wss://relay.damus.io/",
       "wss://relay.primal.net"
