@@ -53,6 +53,13 @@ div.logo-text {
 div.list-section {
   vertical-align: middle;
   display: inline-block;
+  width: 50%;
+}
+
+div.list-item {
+  display: inline-block;
+  margin: 20px 0px;
+  width: 150px;
 }
 
 div.footer {
