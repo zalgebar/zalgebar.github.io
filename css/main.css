@@ -4,15 +4,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-div.main {
-  align: center;
-  vertical-align: middle;
-}
-
-div.logo-section {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -25,6 +16,20 @@ a:hover {
 }
 
 a:visited {
+}
+
+div.main {
+  align: center;
+  vertical-align: middle;
+}
+
+div.header {
+  margin-top: 50px;
+  width: 100%;
+}
+
+div.logo-section {
+  max-width: 100%;
 }
 
 div.logo-link {
@@ -92,6 +97,9 @@ div.footer {
 }
 
 @media (min-width: 992px) {
+  div.header {
+    width: 625px;
+  }
   div.list-section, div.list-section-column {
     width: 625px;
   }
