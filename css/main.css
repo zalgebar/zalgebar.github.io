@@ -37,16 +37,21 @@ div.logo-link {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
+}
+
+/*Hover Border*/
+div.logo-link, div.list-item {
   border: 1px #40404A solid;
   border-radius: 10px;
   transition: border-color 0.4s;
 }
 
-div.logo-link:hover {
+div.logo-link:hover, div.list-item:hover {
   border: 1px gray solid;
   border-radius: 10px;
-  transition: border-color 0.4s;
+  transition: border 0.4s;
 }
+/*END Hover Border*/
 
 img.logo, img.logo-external {
   height: 70px;
@@ -78,12 +83,6 @@ div.list-item {
   margin: 5px 0px;
   width: 150px;
   border: 1px #40404A solid;
-  border-radius: 10px;
-  transition: border 0.4s;
-}
-
-div.list-item:hover {
-  border: 1px gray solid;
   border-radius: 10px;
   transition: border 0.4s;
 }
