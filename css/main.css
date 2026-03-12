@@ -91,7 +91,7 @@ div.footer {
   font-size: 8pt;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   div.list-section, div.list-section-column {
     width: 625px;
   }
