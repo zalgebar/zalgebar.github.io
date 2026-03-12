@@ -9,6 +9,10 @@ div.main {
   vertical-align: middle;
 }
 
+div.logo-section {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -51,8 +55,15 @@ div.logo-text {
   display: inline-block;
 }
 
-div.list-section {
+div.list-section, div.list-section-column {
   vertical-align: middle;
+}
+
+div.list-section {
+  display: block;
+}
+
+div.list-section-column {
   display: inline-block;
 }
 
@@ -81,7 +92,10 @@ div.footer {
 }
 
 @media screen and (min-width: 992px) {
-  div.list-section {
+  div.list-section, div.list-section-column {
     width: 625px;
+  }
+  div.logo-section {
+    max-width: 50%;
   }
 }
