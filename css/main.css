@@ -25,11 +25,11 @@ div.main {
 
 div.header {
   margin-top: 50px;
-  width: 100%;
+  width: 650px;
 }
 
 div.logo-section {
-  max-width: 100%;
+  max-width: 650px;
 }
 
 div.logo-link {
@@ -67,6 +67,7 @@ div.logo-text {
 
 div.list-section, div.list-section-column {
   vertical-align: middle;
+  max-width: 650px;
 }
 
 div.list-section {
@@ -96,14 +97,14 @@ div.footer {
   font-size: 8pt;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px) {
   div.header {
-    width: 625px;
+    width: 100%;
   }
   div.list-section, div.list-section-column {
-    width: 625px;
+    width: 100%;
   }
   div.logo-section {
-    max-width: 50%;
+    max-width: 100%;
   }
 }
