@@ -24,6 +24,7 @@ a:visited {
 }
 
 div.logo-link {
+  min-width: 75px;
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
