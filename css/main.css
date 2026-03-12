@@ -39,20 +39,6 @@ div.logo-link {
   margin: 5px;
 }
 
-/*Hover Border*/
-div.logo-link, div.list-item {
-  border: 1px #40404A solid;
-  border-radius: 10px;
-  transition: border-color 0.4s;
-}
-
-div.logo-link:hover, div.list-item:hover {
-  border: 1px gray solid;
-  border-radius: 10px;
-  transition: border 0.4s;
-}
-/*END Hover Border*/
-
 img.logo, img.logo-external {
   height: 70px;
   vertical-align: middle;
@@ -78,16 +64,46 @@ div.list-section-column {
   display: inline-block;
 }
 
-div.list-item {
+@property --standardGray {
+  syntax: '<color>';
+  initial-value: rgb(0,0,0,0);
+  inherits: false;
+}
+
+div.list-item, div.list-item-prominent {
   display: inline-block;
   vertical-align: middle;
   padding: 20px 0px;
   margin: 5px 0px;
   width: 150px;
+}
+
+/*Hover Border*/
+div.logo-link, div.list-item {
   border: 1px #40404A solid;
   border-radius: 10px;
-  transition: border 0.4s;
+  transition: border-color 0.4s;
 }
+
+div.logo-link:hover, div.list-item:hover {
+  border: 1px gray solid;
+  border-radius: 10px;
+  transition: border-color 0.4s;
+}
+/*END Hover Border*/
+
+/*Hover Gradient*/
+div.list-item-prominent {
+  border: 1px gray solid;
+  border-radius: 10px;
+  background-image: radial-gradient(ellipse farthest-corner at center, rgb(0,0,0,0), rgb(0,0,0,0), var(--standardGray));
+  transition: --standardGray 0.4s;
+}
+
+div.list-item-prominent:hover {
+  --standardGray: gray;
+}
+/*END Hover Gradient*/
 
 div.footer {
   margin: 4em;
