@@ -29,7 +29,7 @@ div.header {
 }
 
 div.logo-section {
-  max-width: 650px;
+  max-width: 75%;
 }
 
 div.logo-link {
@@ -67,7 +67,7 @@ div.logo-text {
 
 div.list-section, div.list-section-column {
   vertical-align: middle;
-  max-width: 650px;
+  max-width: 75%;
 }
 
 div.list-section {
