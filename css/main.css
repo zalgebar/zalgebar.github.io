@@ -1,5 +1,14 @@
+:root {
+  --transitionTime: 0.73s;
+  --standardBackground: #40404A;
+  --standardGray: gray;
+  --standardBorder: 1px var(--standardGray) solid;
+  --standardBorderRadius: 10px;
+  --sectionWidth: 75%;
+}
+
 body {
-  background-color: #40404A;
+  background-color: var(--standardBackground);
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -25,11 +34,11 @@ div.main {
 
 div.header {
   margin-top: 50px;
-  width: 650px;
+  width: var(--sectionWidth);
 }
 
 div.logo-section {
-  max-width: 75%;
+  max-width: var(--sectionWidth);
 }
 
 div.logo-link {
@@ -53,7 +62,7 @@ div.logo-text {
 
 div.list-section, div.list-section-column {
   vertical-align: middle;
-  max-width: 75%;
+  max-width: var(--sectionWidth);
 }
 
 div.list-section {
@@ -62,12 +71,6 @@ div.list-section {
 
 div.list-section-column {
   display: inline-block;
-}
-
-@property --standardGray {
-  syntax: '<color>';
-  initial-value: rgb(0,0,0,0);
-  inherits: false;
 }
 
 div.list-item, div.list-item-prominent {
@@ -80,28 +83,32 @@ div.list-item, div.list-item-prominent {
 
 /*Hover Border*/
 div.logo-link, div.list-item {
-  border: 1px #40404A solid;
-  border-radius: 10px;
-  transition: border-color 0.4s;
+  border: 1px var(--standardBackground) solid;
+  border-radius: var(--standardBorderRadius);
+  transition: border-color var(--transitionTime);
 }
 
 div.logo-link:hover, div.list-item:hover {
-  border: 1px gray solid;
-  border-radius: 10px;
-  transition: border-color 0.4s;
+  border: var(--standardBorder);
 }
 /*END Hover Border*/
 
+@property --transitionGray {
+  syntax: '<color>';
+  initial-value: rgb(0,0,0,0);
+  inherits: false;
+}
+
 /*Hover Gradient*/
 div.list-item-prominent {
-  border: 1px gray solid;
-  border-radius: 10px;
-  background-image: radial-gradient(ellipse farthest-corner at center, rgb(0,0,0,0), rgb(0,0,0,0), var(--standardGray));
-  transition: --standardGray 0.4s;
+  border: var(--standardBorder);
+  border-radius: var(--standardBorderRadius);
+  background-image: radial-gradient(ellipse farthest-corner at center, rgb(0,0,0,0), rgb(0,0,0,0), var(--transitionGray));
+  transition: --transitionGray var(--transitionTime);
 }
 
 div.list-item-prominent:hover {
-  --standardGray: gray;
+  --transitionGray: gray;
 }
 /*END Hover Gradient*/
 
@@ -109,7 +116,7 @@ div.footer {
   margin: 4em;
   display: block;
   text-align: center;
-  color: gray;
+  color: var(--standardGray);
   font-size: 8pt;
 }
 
