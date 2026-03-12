@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="320"
+   height="320"
+   viewBox="0 0 320 320"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="warp-logo.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.5169248"
+     inkscape:cx="160.19251"
+     inkscape:cy="128.87916"
+     inkscape:window-width="1728"
+     inkscape:window-height="1084"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">Graphic Copy</title>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Graphic Copy</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="Graphic-Copy"
+     stroke="none"
+     fill="none"
+     fill-rule="evenodd"
+     stroke-width="1"
+     transform="translate(1.94281,30.63803)">
+    <g
+       id="Group"
+       transform="translate(0,2.921)"
+       fill="#000000">
+      <path
+         d="m 161.80467,0 h 119.33307 c 19.3166,0 34.97664,16.181684 34.97664,36.142777 V 176.46119 c 0,19.96167 -15.66004,36.14321 -34.97664,36.14321 H 110.36832 Z"
+         id="Path"
+         fill-rule="nonzero" />
+      <path
+         d="M 130.80903,40.277747 H 34.678812 C 15.52621,40.277747 0,56.459292 0,76.420322 V 216.73905 c 0,19.96135 15.52621,36.14289 34.678812,36.14289 H 152.99422 l 4.74455,-19.77916 H 84.555406 Z"
+         id="path1"
+         fill-rule="nonzero" />
+    </g>
+  </g>
+</svg>
