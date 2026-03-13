@@ -48,6 +48,14 @@ div.logo-link {
   margin: 5px;
 }
 
+div.logo-link-text {
+  max-width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin-left: 5px;
+}
+
 img.logo, img.logo-external {
   height: 70px;
   vertical-align: middle;
