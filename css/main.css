@@ -60,7 +60,7 @@ div.logo-link-text {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  margin-left: var(--logoLinkMargin);
+  padding: 0px 10px;
 }
 
 img.logo, img.logo-external {
