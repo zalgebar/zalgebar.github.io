@@ -5,6 +5,13 @@
   --standardBorder: 1px var(--standardGray) solid;
   --standardBorderRadius: 10px;
   --sectionWidth: 75%;
+  --logoHeight: 60px;
+  --logoMargin: 8px;
+  --logoLinkMargin: 5px;
+  --logoLinkBorder: 1px;
+  --logoLinkMinWidth: calc(var(--logoHeight) + calc(var(--logoMargin) * 2));
+  --listItemWidth: 110px;
+  --logoLinkWidth: 125px;
 }
 
 body {
@@ -42,25 +49,25 @@ div.logo-section {
 }
 
 div.logo-link {
-  min-width: 92px;
+  min-width: var(--logoLinkMinWidth);
   display: inline-block;
   vertical-align: middle;
-  margin: 5px;
+  margin: var(--logoLinkMargin);
 }
 
 div.logo-link-text {
-  max-width: 150px;
+  max-width: var(--logoLinkWidth);
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  margin-left: 5px;
+  margin-left: var(--logoLinkMargin);
 }
 
 img.logo, img.logo-external {
-  height: 70px;
+  height: var(--logoHeight);
   vertical-align: middle;
   display: inline-block;
-  margin: 10px;
+  margin: var(--logoMargin);
 }
 
 div.logo-text {
@@ -84,9 +91,9 @@ div.list-section-column {
 div.list-item, div.list-item-prominent {
   display: inline-block;
   vertical-align: middle;
-  padding: 20px 0px;
-  margin: 5px 0px;
-  width: 150px;
+  padding: 20px 10px;
+  margin: 3px 3px;
+  width: var(--listItemWidth);
 }
 
 /*Hover Border*/
