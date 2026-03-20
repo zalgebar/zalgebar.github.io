@@ -56,11 +56,11 @@ div.logo-link {
 }
 
 div.logo-link-text {
-  max-width: var(--logoLinkWidth);
+  width: var(--logoLinkWidth);
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  padding: 0px 10px;
+  padding: 5px;
 }
 
 img.logo, img.logo-external {
