@@ -1,11 +1,20 @@
 {
   "names" : {
-    "zalgebar" : "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941"
+    "zalgebar" : "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941",
+    "graceandgrain" : "8a7eed2d9df93c9422db4a341c35f0de12499ba1019563cf070d2485a2754535"
   },
   "relays" : {
-    "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941": [
+    "784c354759228dbe27aed411ad047141ad24dd0387bdc18032701260ff1ed941" : [
       "wss://relay.damus.io/",
-      "wss://relay.primal.net"
+      "wss://relay.primal.net",
+      "wss://nos.lol",
+      "wss://nostr.wine/"
+    ],
+    "8a7eed2d9df93c9422db4a341c35f0de12499ba1019563cf070d2485a2754535" : [
+      "wss://relay.damus.io/",
+      "wss://relay.primal.net",
+      "wss://nos.lol",
+      "wss://nostr.wine/"
     ]
   }
 }
