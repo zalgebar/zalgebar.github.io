@@ -11,7 +11,8 @@
   --logoLinkBorder: 1px;
   --logoLinkMinWidth: calc(var(--logoHeight) + calc(var(--logoMargin) * 2));
   --listItemWidth: 110px;
-  --logoLinkWidth: 125px;
+  --logoLinkTextWidth: 125px;
+  --logoLinkTextMargin: 10px;
 }
 
 body {
@@ -56,11 +57,11 @@ div.logo-link {
 }
 
 div.logo-link-text {
-  width: var(--logoLinkWidth);
+  width: var(--logoLinkTextWidth);
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  padding: 5px;
+  margin-right: var(--logoLinkTextMargin);
 }
 
 img.logo, img.logo-external {
