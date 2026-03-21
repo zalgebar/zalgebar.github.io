@@ -11,8 +11,10 @@
   --logoLinkBorder: 1px;
   --logoLinkMinWidth: calc(var(--logoHeight) + calc(var(--logoMargin) * 2));
   --listItemWidth: 110px;
-  --logoLinkTextWidth: 125px;
+  --logoLinkTextWidth: 80px;
   --logoLinkTextMargin: 10px;
+  --logoLinkTextBigWidth: 125px;
+  --logoLinkTextBigMargin: var(--logoLinkTextMargin);
 }
 
 body {
@@ -56,12 +58,17 @@ div.logo-link {
   margin: var(--logoLinkMargin);
 }
 
-div.logo-link-text {
+div.logo-link-text, div.logo-link-text-big {
   width: var(--logoLinkTextWidth);
   display: inline-block;
   vertical-align: middle;
   text-align: left;
   margin-right: var(--logoLinkTextMargin);
+}
+
+div.logo-link-text-big {
+  width: var(--logoLinkTextBigWidth);
+  margin-right: var(--logoLinkTextBigMargin);
 }
 
 img.logo, img.logo-external {
@@ -89,7 +96,7 @@ div.list-section-column {
   display: inline-block;
 }
 
-div.list-item, div.list-item-prominent {
+div.list-item {
   display: inline-block;
   vertical-align: middle;
   padding: 20px 10px;
@@ -98,7 +105,7 @@ div.list-item, div.list-item-prominent {
 }
 
 /*Hover Border*/
-div.logo-link, div.list-item {
+div.logo-link,  div.list-item {
   border: 1px var(--standardBackground) solid;
   border-radius: var(--standardBorderRadius);
   transition: border-color var(--transitionTime);
@@ -114,19 +121,6 @@ div.logo-link:hover, div.list-item:hover {
   initial-value: rgb(0,0,0,0);
   inherits: false;
 }
-
-/*Hover Gradient*/
-div.list-item-prominent {
-  border: var(--standardBorder);
-  border-radius: var(--standardBorderRadius);
-  background-image: radial-gradient(ellipse farthest-corner at center, rgb(0,0,0,0), rgb(0,0,0,0), var(--transitionGray));
-  transition: --transitionGray var(--transitionTime);
-}
-
-div.list-item-prominent:hover {
-  --transitionGray: gray;
-}
-/*END Hover Gradient*/
 
 div.footer {
   margin: 4em;
