@@ -59,11 +59,11 @@ div.logo-link {
 }
 
 div.logo-link-text, div.logo-link-text-big {
-  width: var(--logoLinkTextWidth);
+  width: var(--logoLinkTextBigWidth);
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  margin-right: var(--logoLinkTextMargin);
+  margin-right: var(--logoLinkTextBigMargin);
 }
 
 div.logo-link-text-big {
@@ -139,5 +139,9 @@ div.footer {
   }
   div.logo-section {
     max-width: 100%;
+  }
+  div.logo-link-text {
+    width: var(--logoLinkTextWidth);
+    margin-right: var(--logoLinkTextMargin);
   }
 }
