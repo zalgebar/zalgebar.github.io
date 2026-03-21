@@ -141,7 +141,7 @@ div.footer {
     max-width: 100%;
   }
   div.logo-link-text {
-    width: var(--logoLinkTextWidth);
-    margin-right: var(--logoLinkTextMargin);
+    width: auto;
+    margin-right: 0px;
   }
 }
