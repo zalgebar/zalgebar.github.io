@@ -8,12 +8,16 @@
       "wss://relay.damus.io/",
       "wss://relay.primal.net",
       "wss://nos.lol",
+      "wss://relay.snort.social",
+      "wss://relay.current.fyi",
       "wss://nostr.wine/"
     ],
     "8a7eed2d9df93c9422db4a341c35f0de12499ba1019563cf070d2485a2754535" : [
       "wss://relay.damus.io/",
       "wss://relay.primal.net",
       "wss://nos.lol",
+      "wss://relay.snort.social",
+      "wss://relay.current.fyi",
       "wss://nostr.wine/"
     ]
   }
