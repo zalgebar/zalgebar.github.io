@@ -34,10 +34,6 @@ a:link {
 a:hover {
 }
 
-a.article:hover {
-  text-decoration: underline;
-}
-
 a:visited {
 }
 
@@ -115,7 +111,7 @@ div.logo-link,  div.list-item, div.article {
   transition: border-color var(--transitionTime);
 }
 
-div.logo-link:hover, div.list-item:hover, div.article {
+div.logo-link:hover, div.list-item:hover, div.article:hover {
   border: var(--standardBorder);
 }
 /*END Hover Border*/
@@ -131,25 +127,21 @@ div.article {
   width: 800px;
   text-align: left;
   margin: 10px 5px;
+  padding: 10px;
 }
 
 div.article-date {
   display: block;
-  /*vertical-align: center;*/
   width: 90px;
-  height: 2em;
-  margin: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   text-align: left;
   color: gray;
 }
 
 div.article-text {
   display: block;
-  /*vertical-align: center;*/
   text-align: left;
-  margin: 10px;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 div.footer {
