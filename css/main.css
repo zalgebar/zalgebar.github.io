@@ -96,7 +96,7 @@ div.list-section-column {
   display: inline-block;
 }
 
-div.list-item {
+div.major-link, div.list-item {
   display: inline-block;
   vertical-align: middle;
   padding: 20px 10px;
@@ -104,14 +104,21 @@ div.list-item {
   width: var(--listItemWidth);
 }
 
+div.major-link {
+  /*background-color: rgba(255,255,255,10%);*/
+  background-image: linear-gradient(rgb(226,151,63),rgb(176,101,13),rgb(176,101,13),rgb(226,151,63));
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
 /*Hover Border*/
-div.logo-link,  div.list-item, div.article {
+div.major-link, div.logo-link,  div.list-item, div.article {
   border: 1px var(--standardBackground) solid;
   border-radius: var(--standardBorderRadius);
   transition: border-color var(--transitionTime);
 }
 
-div.logo-link:hover, div.list-item:hover, div.article:hover {
+div.major-link:hover, div.logo-link:hover, div.list-item:hover, div.article:hover {
   border: var(--standardBorder);
 }
 /*END Hover Border*/
