@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Zalgebar Booth" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#F4F4F6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#40404A" media="(prefers-color-scheme: dark)" />
+  <title>Zalgebar Booth</title>
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <link rel="apple-touch-icon" href="../images/favicon.png" />
+  <link rel="stylesheet" href="booth.css" />
+  <script src="booth.js" defer></script>
+</head>
+<body>
+  <main id="deck">
+    <div id="slides"></div>
+
+    <button type="button" class="nav prev" id="prev" aria-label="Previous product">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+    </button>
+    <button type="button" class="nav next" id="next" aria-label="Next product">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+    </button>
+
+    <div class="toggle-flash" id="toggle-flash" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path id="toggle-flash-icon" d="" /></svg>
+    </div>
+
+    <div class="rate" id="rate"></div>
+    <div class="progress" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="message" id="message" hidden></div>
+  </main>
+</body>
+</html>

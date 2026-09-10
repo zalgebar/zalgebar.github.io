@@ -1,0 +1,313 @@
+/* Light theme; the dark theme below takes over when the browser/OS is set to dark */
+:root {
+  color-scheme: light dark;
+  --background: #F4F4F6;
+  --photoBackground: #E4E4EA;
+  --accent: rgb(226,151,63);
+  --accentText: rgb(176,101,13);
+  --text: #1E1E24;
+  --mutedText: rgba(30,30,36,0.72);
+  --faintText: rgba(30,30,36,0.5);
+  --divider: rgba(30,30,36,0.2);
+  --barTrack: rgba(30,30,36,0.1);
+  --pausedFill: rgba(30,30,36,0.45);
+  --overlayBackground: rgba(255,255,255,0.85);
+  --overlayIcon: #1E1E24;
+  --overlayShadow: 0 2px 10px rgba(0,0,0,0.15);
+  --barHeight: max(6px, 0.9vmin);
+  --slideTime: 0.45s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #40404A;
+    --photoBackground: #33333B;
+    --accentText: rgb(226,151,63);
+    --text: white;
+    --mutedText: rgba(255,255,255,0.75);
+    --faintText: rgba(255,255,255,0.45);
+    --divider: rgba(255,255,255,0.25);
+    --barTrack: rgba(255,255,255,0.12);
+    --pausedFill: rgba(255,255,255,0.6);
+    --overlayBackground: rgba(0,0,0,0.4);
+    --overlayIcon: white;
+    --overlayShadow: none;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body.idle {
+  cursor: none;
+}
+
+#deck {
+  position: fixed;
+  top: env(safe-area-inset-top);
+  right: env(safe-area-inset-right);
+  bottom: env(safe-area-inset-bottom);
+  left: env(safe-area-inset-left);
+  overflow: hidden;
+}
+
+#slides {
+  position: absolute;
+  inset: 0 0 var(--barHeight) 0;
+}
+
+/* Slides: photo on top, details below (portrait) */
+.slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  visibility: hidden;
+  transition: transform var(--slideTime) cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.photo {
+  min-height: 0;
+  padding: 3vmin;
+  background-color: var(--photoBackground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.info {
+  padding: 4vmin 6vmin 5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.2vmin;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(2rem, 7vmin, 5.5rem);
+  line-height: 1.1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.description {
+  margin: 0;
+  font-size: clamp(1.1rem, 3.4vmin, 2.4rem);
+  line-height: 1.35;
+  color: var(--mutedText);
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.prices {
+  margin-top: 1.5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 5vmin;
+  row-gap: 1vmin;
+}
+
+.price {
+  font-size: clamp(2.2rem, 8vmin, 6rem);
+  font-weight: bold;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.price.sats {
+  color: var(--accentText);
+}
+
+.price.usd {
+  color: var(--mutedText);
+}
+
+.price-divider {
+  align-self: stretch;
+  width: 2px;
+  background-color: var(--divider);
+}
+
+/* Landscape: photo left, details right */
+@media (orientation: landscape) {
+  .slide {
+    grid-template-rows: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  }
+  .info {
+    padding: 5vmin 9vmin 5vmin 5vmin;
+    text-align: left;
+  }
+  .name {
+    font-size: clamp(2rem, 6.2vmin, 5rem);
+    -webkit-line-clamp: 3;
+  }
+  .description {
+    -webkit-line-clamp: 6;
+  }
+  .prices {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .price-divider {
+    display: none;
+  }
+}
+
+/* Time-on-slide bar */
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--barHeight);
+  background-color: var(--barTrack);
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+/* Paused: bar freezes, turns gray, and pulses */
+body.paused .progress-fill {
+  background-color: var(--pausedFill);
+  animation: paused-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes paused-pulse {
+  50% { opacity: 0.35; }
+}
+
+.toggle-flash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(72px, 14vmin, 140px);
+  height: clamp(72px, 14vmin, 140px);
+  margin: calc(clamp(72px, 14vmin, 140px) / -2) 0 0 calc(clamp(72px, 14vmin, 140px) / -2);
+  border-radius: 50%;
+  background-color: var(--overlayBackground);
+  box-shadow: var(--overlayShadow);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-flash svg {
+  width: 50%;
+  height: 50%;
+  fill: var(--overlayIcon);
+}
+
+.rate {
+  position: absolute;
+  right: 2.5vmin;
+  bottom: calc(var(--barHeight) + 1.5vmin);
+  font-size: clamp(11px, 1.6vmin, 16px);
+  color: var(--faintText);
+  pointer-events: none;
+}
+
+/* Prev / next buttons, faded out while idle */
+.nav {
+  position: absolute;
+  top: 50%;
+  width: clamp(48px, 9vmin, 88px);
+  height: clamp(48px, 9vmin, 88px);
+  margin-top: calc(clamp(48px, 9vmin, 88px) / -2);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--overlayBackground);
+  box-shadow: var(--overlayShadow);
+  color: var(--overlayIcon);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity var(--slideTime);
+}
+
+.nav.prev {
+  left: 2vmin;
+}
+
+.nav.next {
+  right: 2vmin;
+}
+
+.nav svg {
+  width: 55%;
+  height: 55%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body.idle .nav, body.single .nav, body.single .progress {
+  opacity: 0;
+}
+
+body.single .nav {
+  pointer-events: none;
+}
+
+.message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vmin;
+  text-align: center;
+  font-size: clamp(1.1rem, 3.4vmin, 2.2rem);
+  color: var(--mutedText);
+  background-color: var(--background);
+}
+
+.message[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --slideTime: 0.2s;
+  }
+}

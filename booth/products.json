@@ -1,0 +1,129 @@
+{
+  "defaultSeconds": 10,
+  "discount": {
+    "sats" : "10%"
+  },
+  "rounding": {
+    "usd": { "direction": "up", "digits": 2 },
+    "sats": { "direction": "down", "digits": 2 }
+  },
+  "products": [
+    {
+      "name": "SeedSigner Enclosure",
+      "description": "Enclosure only. Includes enclosure, faceplate, joystick and buttons.\nDoes not include hardware or electronics.",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/4f8a1303-1d77-4b83-b65a-8b09cce0470a/1769816283416-f4h6nqpvgbb.jpeg",
+      "usd": 25,
+      "discount": {
+        "sats" : "10%"
+      },
+      "rounding": {
+        "usd": { "direction": "up", "digits": 2 },
+        "sats": { "direction": "down", "digits": 2 }
+      }
+    },
+    {
+      "name": "SeedSigner Self-Assembly Kit",
+      "description": "Get all the parts to assemble your own SeedSigner!\nBase model does not include micro USB power cable or battery pack.",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/246b114b-e014-49c2-88fe-87c3b41d593c/1769816342370-czfn0ehga1n.jpeg",
+      "usd": 90,
+      "discount": {
+        "sats" : "10%"
+      },
+      "rounding": {
+        "usd": { "direction": "up", "digits": 2 },
+        "sats": { "direction": "down", "digits": 2 }
+      }
+    },
+    {
+      "name": "SeedSigner SeedQR Cards",
+      "description": "Pack of 5 double-sided paper cards with space to record your seed phrase, fingerprint, SeedQR, and a note. For use with SeedSigners.",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/2bbd3687-946c-468f-a81a-df7e97f8b453/1771676901834-7830f5rikpu.jpeg",
+      "sats": 3000,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 1 }
+      }
+    },
+    {
+      "name": "HODL Block Light",
+      "description": "Light up your desk with proof that you're a HODLer!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/aa1360c3-3e48-4117-8850-9106e3f8a7d4/1769815401855-fjqgsyfk5ab.jpeg",
+      "usd": 25
+    },
+    {
+      "name": "HODL Block Light Mini",
+      "description": "Subtly light up your desk with a mini HODL Block Light!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/9b907a77-9af7-47c3-970e-8d4e1ab3d898/1774749036715-bpv1l76pssh.jpeg",
+      "usd": 15
+    },
+    {
+      "name": "Custom Block Light",
+      "description": "Get your logo on a Block Light designed by Zalgebar!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/99be2824-a537-4e62-9271-4cfc3bf39cc0/1772813618129-9fyosu49uqa.png",
+      "usd": 50,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 2 }
+      }
+    },
+    {
+      "name": "Custom Block Light Mini",
+      "description": "Get your logo on a Block Light Mini designed by Zalgebar!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/8660ad64-5f37-4109-94a7-de82c81cd293/1777314770208-wr1a048wjj.jpg",
+      "usd": 30,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 2 }
+      }
+    },
+    {
+      "name": "Bitcoin Cookie Cutter",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/faa3b001-a806-43df-be8d-7c69f3e54ab4/1769816197672-vpssnqgar2l.jpeg",
+      "sats": 5000
+    },
+    {
+      "name": "8-Bit Nostrich",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/48cb3cf1-4bc8-4e38-8c31-f7a4cb098ede/1780079417899-7gtrk7o9er2.jpg",
+      "sats": 5000,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 1 }
+      }
+    },
+    {
+      "name": "8-Bit Bullish Bull",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/5a14ebab-ecf2-40b3-8e2b-5e480abd3133/1786389902712-5hsl5o9uksx.jpeg",
+      "sats": 5000,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 1 }
+      }
+    },
+    {
+      "name": "Bitcoin Challenge Coin",
+      "description": "Show it off or remind yourself what hard money is!",
+      "image": "https://blossom.primal.net/3b88e18e0b59053beb5dd005b7938afd7ca6f130b65e79ef0b2f7675e717bbe0.jpg",
+      "usd": 10
+    },
+    {
+      "name": "See more on my online Shop!",
+      "description": "https://www.takemysats.com/zalgebar-media",
+      "image": "https://quickchart.io/qr?text=https%3A%2F%2Fwww.takemysats.com%2Fzalgebar-media&size=900"
+    },
+    {
+      "name": "Dehydrated Sourdough Starter",
+      "description": "Sourdough Starter great for shipping or long-term storage. Just add water and flour!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/2124631d-e706-4936-98b9-071bd94f48fb/85141352-4a5e-4176-b92c-860d6bc94761/1776209350054-npt6gs15tpk.jpg",
+      "usd": 25,
+      "discount" : false,
+      "rounding": {
+        "sats": { "direction": "down", "digits": 2 }
+      }
+    },
+    {
+      "name": "Sourdough Starter - Rehydration Instructions",
+      "description": "https://www.takemysats.com/kaybee-kitchen/pages/rehydration-instructions",
+      "image": "https://quickchart.io/qr?text=https%3A%2F%2Fwww.takemysats.com%2Fkaybee-kitchen%2Fpages%2Frehydration-instructions&size=900"
+    }
+  ]
+}
