@@ -9,6 +9,21 @@
   },
   "products": [
     {
+      "name": "Dehydrated Sourdough Starter",
+      "description": "Sourdough Starter great for shipping or long-term storage. Just add water and flour!",
+      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/2124631d-e706-4936-98b9-071bd94f48fb/85141352-4a5e-4176-b92c-860d6bc94761/1776209350054-npt6gs15tpk.jpg",
+      "usd": 25,
+      "discount" : false,
+      "rounding": {
+        "sats": { "direction": "down", "digits": 2 }
+      }
+    },
+    {
+      "name": "Sourdough Starter - Rehydration Instructions",
+      "description": "https://www.takemysats.com/kaybee-kitchen/pages/rehydration-instructions",
+      "image": "https://quickchart.io/qr?text=https%3A%2F%2Fwww.takemysats.com%2Fkaybee-kitchen%2Fpages%2Frehydration-instructions&size=900"
+    },
+    {
       "name": "SeedSigner Enclosure",
       "description": "Enclosure only. Includes enclosure, faceplate, joystick and buttons.\nDoes not include hardware or electronics.",
       "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/4f8a1303-1d77-4b83-b65a-8b09cce0470a/1769816283416-f4h6nqpvgbb.jpeg",
@@ -106,28 +121,13 @@
       "usd": 10
     },
     {
+      "name": "Quick Checkout",
+      "image": "https://blossom.primal.net/6e94ef8caaeac1dcb711c7ca74aca9719ae5837b659b36b96ad3895e204b8856.png"
+    },
+    {
       "name": "See more on my online Shop!",
       "description": "https://www.takemysats.com/zalgebar-media",
       "image": "https://quickchart.io/qr?text=https%3A%2F%2Fwww.takemysats.com%2Fzalgebar-media&size=900"
-    },
-    {
-      "name": "Dehydrated Sourdough Starter",
-      "description": "Sourdough Starter great for shipping or long-term storage. Just add water and flour!",
-      "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/2124631d-e706-4936-98b9-071bd94f48fb/85141352-4a5e-4176-b92c-860d6bc94761/1776209350054-npt6gs15tpk.jpg",
-      "usd": 25,
-      "discount" : false,
-      "rounding": {
-        "sats": { "direction": "down", "digits": 2 }
-      }
-    },
-    {
-      "name": "Sourdough Starter - Rehydration Instructions",
-      "description": "https://www.takemysats.com/kaybee-kitchen/pages/rehydration-instructions",
-      "image": "https://quickchart.io/qr?text=https%3A%2F%2Fwww.takemysats.com%2Fkaybee-kitchen%2Fpages%2Frehydration-instructions&size=900"
-    },
-    {
-      "name": "Quick Checkout",
-      "image": "https://blossom.primal.net/6e94ef8caaeac1dcb711c7ca74aca9719ae5837b659b36b96ad3895e204b8856.png"
     }
   ]
 }
