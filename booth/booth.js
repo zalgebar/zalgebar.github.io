@@ -20,6 +20,7 @@
   const slidesEl = document.getElementById('slides');
   const progressFill = document.getElementById('progress-fill');
   const rateEl = document.getElementById('rate');
+  const counterEl = document.getElementById('counter');
   const messageEl = document.getElementById('message');
   const toggleFlash = document.getElementById('toggle-flash');
   const toggleFlashIcon = document.getElementById('toggle-flash-icon');
@@ -254,6 +255,7 @@
   function setActive(index) {
     current = index;
     slides.forEach((slide, i) => slide.setAttribute('aria-hidden', String(i !== index)));
+    counterEl.textContent = `${index + 1} / ${slides.length}`;
     startProgress();
   }
 
