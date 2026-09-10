@@ -94,7 +94,11 @@
     {
       "name": "Bitcoin Cookie Cutter",
       "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/faa3b001-a806-43df-be8d-7c69f3e54ab4/1769816197672-vpssnqgar2l.jpeg",
-      "sats": 5000
+      "sats": 5000,
+      "discount" : false,
+      "rounding": {
+        "usd": { "direction": "up", "digits": 1 }
+      }
     },
     {
       "name": "8-Bit Nostrich",
