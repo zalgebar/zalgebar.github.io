@@ -51,7 +51,7 @@
     },
     {
       "name": "SeedSigner SeedQR Cards",
-      "description": "Pack of 5 double-sided paper cards with space to record your seed phrase, fingerprint, SeedQR, and a note. For use with SeedSigners.",
+      "description": "Double-sided cards with space to record your seed phrase, fingerprint, SeedQR, and a note. For use with SeedSigners and Foundation Prime wallets.",
       "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/2bbd3687-946c-468f-a81a-df7e97f8b453/1771676901834-7830f5rikpu.jpeg",
       "sats": 3000,
       "discount" : false,
