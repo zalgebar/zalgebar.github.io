@@ -25,7 +25,7 @@
     },
     {
       "name": "SeedSigner Enclosure",
-      "description": "Enclosure only. Includes enclosure, faceplate, joystick and buttons.\nDoes not include hardware or electronics.",
+      "description": "Enclosure only. Includes enclosure, faceplate, joystick and buttons. Does not include hardware or electronics.",
       "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/4f8a1303-1d77-4b83-b65a-8b09cce0470a/1769816283416-f4h6nqpvgbb.jpeg",
       "usd": 25,
       "discount": {
@@ -38,7 +38,7 @@
     },
     {
       "name": "SeedSigner Self-Assembly Kit",
-      "description": "Get all the parts to assemble your own SeedSigner!\nBase model does not include micro USB power cable or battery pack.",
+      "description": "Get all the parts to assemble your own SeedSigner! Base model does not include micro USB power cable or battery pack.",
       "image": "https://isztweijyasskovubfcb.supabase.co/storage/v1/object/public/product-images/f2edab57-c683-4fcb-9037-e73d7cea8536/246b114b-e014-49c2-88fe-87c3b41d593c/1769816342370-czfn0ehga1n.jpeg",
       "usd": 90,
       "discount": {
