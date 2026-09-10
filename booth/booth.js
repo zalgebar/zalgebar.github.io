@@ -15,6 +15,8 @@
   const WHEEL_QUIET_MS = 250;
   const WHEEL_MIN_LOCK_MS = 300;
   const WHEEL_GROWTH = 1.3;
+  const MIN_TEXT_SCALE = 0.5;
+  const TEXT_SCALE_STEP = 0.05;
 
   const deck = document.getElementById('deck');
   const slidesEl = document.getElementById('slides');
@@ -224,6 +226,30 @@
 
     slide.append(photo, info);
     return slide;
+  }
+
+  // If a product's text doesn't fit its panel, shrink the name and
+  // description (never the prices) a step at a time until it does.
+  function fitText() {
+    for (const info of slidesEl.querySelectorAll('.info')) {
+      let scale = 1;
+      info.style.setProperty('--textScale', scale);
+      while (info.scrollHeight > info.clientHeight + 1 && scale > MIN_TEXT_SCALE) {
+        scale = Number((scale - TEXT_SCALE_STEP).toFixed(2));
+        info.style.setProperty('--textScale', scale);
+      }
+    }
+  }
+
+  // Re-fit whenever the slide area changes size: rotating the iPad, Safari's
+  // toolbar showing or hiding, or resizing a laptop window.
+  function setupTextFitting() {
+    fitText();
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(fitText).observe(slidesEl);
+    } else {
+      window.addEventListener('resize', fitText);
+    }
   }
 
   function showMessage(text) {
@@ -563,6 +589,7 @@
     });
 
     document.body.classList.toggle('single', slides.length < 2);
+    setupTextFitting();
     place(slides[0], 0, 0, false);
     setActive(0);
 

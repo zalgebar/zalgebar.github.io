@@ -101,35 +101,51 @@ body.idle {
   -webkit-user-drag: none;
 }
 
+/* Text uses as much of the panel as it needs. If it still doesn't fit,
+   booth.js lowers --textScale to shrink the name and description (not the prices). */
 .info {
+  --textScale: 1;
+  box-sizing: border-box;
   padding: 4vmin 6vmin 5vmin;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2.2vmin;
   text-align: center;
+  overflow: hidden;
+}
+
+/* Auto margins center the text when there's room, and give way
+   (instead of pushing text off the top) when there isn't */
+.info > :first-child {
+  margin-top: auto;
+}
+
+.info > :last-child {
+  margin-bottom: auto;
 }
 
 .name {
   margin: 0;
-  font-size: clamp(2rem, 7vmin, 5.5rem);
+  font-size: calc(clamp(2rem, 7vmin, 5.5rem) * var(--textScale));
   line-height: 1.1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+  overflow-wrap: anywhere;
 }
 
 .description {
   margin: 0;
-  font-size: clamp(1.1rem, 3.4vmin, 2.4rem);
+  font-size: calc(clamp(1.1rem, 3.4vmin, 2.4rem) * var(--textScale));
   line-height: 1.35;
   color: var(--mutedText);
   white-space: pre-line;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* Portrait: the text panel grows with its text, up to 60% of the screen */
+@media (orientation: portrait) {
+  .info {
+    max-height: 60vh;
+    max-height: 60dvh;
+  }
 }
 
 .prices {
@@ -174,11 +190,7 @@ body.idle {
     text-align: left;
   }
   .name {
-    font-size: clamp(2rem, 6.2vmin, 5rem);
-    -webkit-line-clamp: 3;
-  }
-  .description {
-    -webkit-line-clamp: 6;
+    font-size: calc(clamp(2rem, 6.2vmin, 5rem) * var(--textScale));
   }
   .prices {
     flex-direction: column;
